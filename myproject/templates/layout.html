@@ -12,7 +12,7 @@
     <script src="{% static 'js/main.js' %}" defer></script>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
-<body>
+<body> 
     <nav>
         <a href="/">
             <span role="img" aria-label="Home">🏠</span>  
@@ -24,7 +24,12 @@
             <span role="img" aria-label="Posts">📰</span>  
         </a> |
         <a href="{% url 'users:register' %}">
-            <span role="img" aria-label="User Registration">🚀</span>  
+            <span role="img" aria-label="User Registration"
+            title="User Registration">🚀</span>  
+        </a> |
+        <a href="{% url 'users:login' %}">
+            <span role="img" aria-label="User Login"
+            title="User Login">🔐</span>  
         </a> 
     </nav>
     <main>
